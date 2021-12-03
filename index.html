@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="name">
+            <h2 class="char-name">Legolas</h2>
+        </div>
+        <div class="type">
+            <h3 class="char-type">Archer</h3>
+        </div>
+
+        <div class="inventory">
+            <h2 class="char-inventory">Inventory</h2>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <div class="skills">
+            <h2 class="char-skills">Skills & Stats</h2>
+
+            <h3>HP:</h3>
+                <script>
+                    -var elSet = 5
+                    .bar
+	                -for(var n = 0; n < elSet; n++)
+		                input.bar-input(
+			                type="radio"
+			                name="input"
+			                id="input_" + n
+		                    )
+		            .bar-view
+			            label.bar-button(
+				        for="input_" + n
+			            )
+                </script>
+                
+            <h3>AG:</h3>
+            <h3>AT:</h3>
+            <h3>DF</h3>
+        </div>
+
+        <div class="stats">
+            <h4 class="char-stats">stats</h4>
+        </div>
+        <div class="xp">
+            <h2>char-xp</h2>
+        </div>
+        <div class="version">
+            <h5 class="ver">Version</h5>
+        </div>
+      </div>
+
+      <script src="/main.js"></script>
+</body>
+</html>
