@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Status</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" />
 </head>
 
 <body>
     <div class="container">
         <div class="name">
-            <h2 class="char-name">Legolas</h2>
+            <h2 class="char-name">Name: Legolas</h2>
         </div>
         <div class="type">
-            <h3 class="char-type">Archer</h3>
+            <h1 class="char-type">Class: Archer</h1>
         </div>
 
         <div class="inventory">
@@ -31,38 +29,41 @@
         <div class="skills">
             <h2 class="char-skills">Skills & Stats</h2>
 
-            <h3>HP:</h3>
-                <script>
-                    -var elSet = 5
-                    .bar
-	                -for(var n = 0; n < elSet; n++)
-		                input.bar-input(
-			                type="radio"
-			                name="input"
-			                id="input_" + n
-		                    )
-		            .bar-view
-			            label.bar-button(
-				        for="input_" + n
-			            )
-                </script>
-                
-            <h3>AG:</h3>
-            <h3>AT:</h3>
-            <h3>DF</h3>
+            <h3>HP:</h3> <progress id="file" max="100" value="70"> 70% </progress>
+            <h3>AG:</h3> <progress id="file" max="100" value="70"> 70% </progress>
+            <h3>AT:</h3> <progress id="file" max="100" value="70"> 70% </progress>
+            <h3>DF:</h3> <progress id="file" max="100" value="70"> 70% </progress>
+
+            <h2>Ataques</h2>
+                <li>Melee: 1</li>
+                <li>Rango: 2</li>
+                <li><h3>habilidad:</h3></li>
+                <li>Fuego: Pega en área +3 ≥ 15</li>
+                <li>Hielo: Congela al enemigo "x" turnos ≥ 12</li>
         </div>
 
         <div class="stats">
-            <h4 class="char-stats">stats</h4>
+            <h2 class="char-stats">stats</h2>
+            <ul>
+                <li>Busqueda [1]</li>
+                <li>Caminar [3]</li>
+                <li>Atacar [3]</li>
+                <li>Acción [3]</li>
+                <li>Intercambio [3]</li>
+                <li>Ataque especial [3]</li>
+            </ul>
         </div>
+
         <div class="xp">
-            <h2>char-xp</h2>
+            <h4>Exp:</h4> <progress id="file" max="100" value="70"> 70% </progress>
+            <h4>Lv1:</h4> <progress id="file" max="100" value="70"> 70% </progress>
+            <h4>Lv2:</h4> <progress id="file" max="100" value="70"> 70% </progress>
+            <h4>Lv3:</h4> <progress id="file" max="100" value="70"> 70% </progress>
         </div>
+        
         <div class="version">
-            <h5 class="ver">Version</h5>
+            <p class="ver">V_1.0.1</p>
         </div>
       </div>
-
-      <script src="/main.js"></script>
 </body>
 </html>

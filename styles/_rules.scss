@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin items {
+    background: rgb(34, 147, 175);
+    height: 5em;
+    width: 8em;
+    margin: 5px;
+}
+
+@mixin list-pointer {
+    list-style-image: url(/media/paper-icon.png);
+    list-style-image: 5px;
+}
+
+@mixin m-t {
+    margin-top: 20px;
+}
+
+$text1: 24px;
+$text2: 18px;
+$text3: 16px;
+$text4: 14px;
+$text5: 12px;

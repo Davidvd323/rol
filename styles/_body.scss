@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1.3fr 0.9fr 0.8fr;
@@ -16,49 +10,55 @@
       "skills skills inventory"
       "skills skills stats"
       "xp xp version";
-
-      /* Styles */
+      
+      font-family: MedievalSharp;
       background: url(/media/paper_background.jpg);
-      background-position: center;
-      padding: 20px;
-
-      font-family: 'Grenze Gotisch', cursive;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 20px;
+      padding-right: 20px;
   }
   
   .name { 
       grid-area: name;
-      font-size: 2.5em;
+      @include m-t;
+      font-size: $text1;
     }
   
   .type { 
-      grid-area: type; 
-      font-size: 2em;
+      grid-area: type;
+      @include m-t;
+      font-size: $text2;
     }
   
   .inventory {
-       grid-area: inventory; 
-       font-size: 2em;
-    }
-        .inventory .item {
-            background: coral;
-            margin: 5px;
-            height: 4em;
-            width: 6em;
-        }
+       grid-area: inventory;
+       @include m-t;
+       font-size: $text2;
+       
+       .item {
+           @include items;
+       }
+     }
   
   .skills { 
-      grid-area: skills; 
-      font-size: 2em;
+      grid-area: skills;
+      
+      li {
+          @include list-pointer;
+      }
     }
   
   .stats { 
-      grid-area: stats; 
-      font-size: 1.5em;
+      grid-area: stats;
+      
+      li {
+          @include list-pointer;
+      }
     }
   
   .xp { 
       grid-area: xp; 
-      font-size: 2em;
     }
   
   .version { 
