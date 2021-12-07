@@ -29,17 +29,42 @@
         <div class="skills">
             <h2 class="char-skills">Skills & Stats</h2>
 
-            <h3>HP:</h3> <progress id="file" max="100" value="70"> 70% </progress>
-            <h3>AG:</h3> <progress id="file" max="100" value="70"> 70% </progress>
-            <h3>AT:</h3> <progress id="file" max="100" value="70"> 70% </progress>
-            <h3>DF:</h3> <progress id="file" max="100" value="70"> 70% </progress>
+            <div class="progress-bar" style="--width: 50" data-label= "HP: 7/7"></div>
+            <div class="progress-bar" style="--width: 50" data-label= "AG: 5"></div>
+            <div class="progress-bar" style="--width: 50" data-label= "AT: 3"></div>
+            <div class="progress-bar" style="--width: 50" data-label= "DF: 11"></div>
+
+            <!-- <div>
+                <label for="file" class="label-status">
+                    HP: <progress id="file" max="100" value="70"> 70% </progress>
+                </label>
+                <label for="file" class="label-status">
+                    AG: <progress id="file" max="100" value="70"> 70% </progress>
+                </label>
+                <label for="file" class="label-status">
+                    AT: <progress id="file" max="100" value="70"> 70% </progress>
+                </label>
+                <label for="file" class="label-status">
+                    DF: <progress id="file" max="100" value="70"> 70% </progress>
+                </label>
+                
+            </div> -->
 
             <h2>Ataques</h2>
+            <div class="atacks-div">
                 <li>Melee: 1</li>
                 <li>Rango: 2</li>
-                <li><h3>habilidad:</h3></li>
+                <li class="hability">habilidad:</li>
                 <li>Fuego: Pega en área +3 ≥ 15</li>
                 <li>Hielo: Congela al enemigo "x" turnos ≥ 12</li>
+            </div>
+        </div>
+        
+        <div class="xp">
+            <h4>Exp:</h4> <progress id="file" max="100" value="70"> 70% </progress>
+            <h4>Lv1:</h4> <progress id="file" max="100" value="70"> 70% </progress>
+            <h4>Lv2:</h4> <progress id="file" max="100" value="70"> 70% </progress>
+            <h4>Lv3:</h4> <progress id="file" max="100" value="70"> 70% </progress>
         </div>
 
         <div class="stats">
@@ -54,16 +79,12 @@
             </ul>
         </div>
 
-        <div class="xp">
-            <h4>Exp:</h4> <progress id="file" max="100" value="70"> 70% </progress>
-            <h4>Lv1:</h4> <progress id="file" max="100" value="70"> 70% </progress>
-            <h4>Lv2:</h4> <progress id="file" max="100" value="70"> 70% </progress>
-            <h4>Lv3:</h4> <progress id="file" max="100" value="70"> 70% </progress>
-        </div>
         
         <div class="version">
             <p class="ver">V_1.0.1</p>
         </div>
       </div>
+
+      <script src="/scripts/main.js"></script>
 </body>
 </html>

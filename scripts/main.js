@@ -1,3 +1,6 @@
-processbar('process1',1); //to add 1%
-processbar('process1',-1); //to subtract 1%
-document.ids[0] = setInterval(function () { processbar('process1',.7,0); }, 5);
+const progressBar = document.getElementsByClassName
+('progress-bar')[0]
+setInterval(() => {
+    const computedStyle = getComputedStyle(progressBar)
+    const width = parseFloat(computedStyle.getPropertyvalue('--width')) || 0 progressBar.style.setProperty('--width', width + .1)
+}, 5);

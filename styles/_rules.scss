@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
 @mixin items {
     background: rgb(34, 147, 175);
     height: 5em;
-    width: 8em;
-    margin: 5px;
+    width: 12em;
+    margin: 10px;
 }
 
 @mixin list-pointer {
